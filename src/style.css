@@ -7473,9 +7473,6 @@ body.is-marketing-informer-visible .page-wrapper {
   }
 }
 
-
-
-
 /* Header positioning */
 .page-header {
   position: fixed;
@@ -7545,7 +7542,6 @@ body.is-marketing-informer-visible .page-wrapper {
   }
 }
 
-
 .cover .cover-down-arrow {
   display: inline-flex;
   align-items: center;
@@ -7594,7 +7590,6 @@ body.is-marketing-informer-visible .page-wrapper {
   object-fit: cover;
 }
 
-
 /* ABOUT PAGE — remove rounded corners from main cover */
 
 .uc-page-type-page .cover,
@@ -7607,3 +7602,51 @@ body.is-marketing-informer-visible .page-wrapper {
   border-radius: 0 !important;
 }
 
+/* =========================================
+   ADIL ARCHITECTS — MANROPE TYPOGRAPHY
+   ========================================= */
+
+html,
+body,
+#root {
+  font-family: "Manrope", sans-serif;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "Manrope", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+li {
+  font-family: "Manrope", sans-serif;
+}
+
+/* Premium architectural typography */
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+}

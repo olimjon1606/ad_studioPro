@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 
 import {
   BrowserRouter,
@@ -18,15 +18,14 @@ import FloatingActions from "./components/FloatingActions";
 // PAGES
 import Interier from "./Pages/Interier";
 import Exterier from "./Pages/Exterier";
-
-// STYLES
-import "./style.css";
-import "./react-fixes.css";
 import Project from "./Pages/Project";
 import InterierVis from "./Pages/InterierVis";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-// import InterierViz from "./Pages/InterierViz";
+
+// STYLES
+import "./style.css";
+import "./react-fixes.css";
 
 // HOME PAGE
 function Home() {
@@ -47,12 +46,8 @@ function AppContent() {
 
       {/* PAGE ROUTES */}
       <Routes>
-
         {/* HOME */}
-        <Route
-          path="/"
-          element={<Home />}
-        />
+        <Route path="/" element={<Home />} />
 
         {/* OLD HOME URL REDIRECT */}
         <Route
@@ -84,21 +79,35 @@ function AppContent() {
           element={<Navigate to="/exterier" replace />}
         />
 
+        {/* INTERIOR VISUALIZATION */}
+        <Route
+          path="/interior_vis"
+          element={<InterierVis />}
+        />
+
+        {/* ABOUT US */}
+        <Route
+          path="/about"
+          element={<About />}
+        />
+
+        {/* CONTACT */}
+        <Route
+          path="/contacts"
+          element={<Contact />}
+        />
+
+        {/* INDIVIDUAL PROJECT PAGES */}
+        <Route
+          path="/:projectSlug"
+          element={<Project />}
+        />
+
         {/* UNKNOWN URLS */}
         <Route
           path="*"
           element={<Navigate to="/" replace />}
         />
-
-        <Route path="/:projectSlug" element={<Project />} />
-
-
-        // Inside
-        <Route path="/interior_vis" element={<InterierVis/>}/>
-
-        <Route path="/about" element={<About />} />
-        <Route path="/contacts" element={<Contact />} />
-
       </Routes>
 
       {/* FOOTER ON ALL PAGES */}
@@ -112,6 +121,21 @@ function AppContent() {
 
 // APP
 export default function App() {
+  useEffect(() => {
+    // Load Manrope from Google Fonts
+    const fontLink = document.createElement("link");
+
+    fontLink.rel = "stylesheet";
+    fontLink.href =
+      "https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap";
+
+    document.head.appendChild(fontLink);
+
+    return () => {
+      fontLink.remove();
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <AppContent />
