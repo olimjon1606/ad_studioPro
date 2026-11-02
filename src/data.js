@@ -19,7 +19,7 @@ export const portfolioProjects = [
     images: [
        "/images/Enspes_01.1.jpg",
        "/images/Enspes_02.2.jpg",
-       "/images/Enspes_03.3.jpg",
+       "/images/Enspes_03.1.jpg",
        "/images/Enspes_04.4.jpg",
        "/images/Enspes_05.5.jpg",
        "/images/Enspes_06.6.jpg",
