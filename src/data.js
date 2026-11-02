@@ -17,9 +17,14 @@ export const portfolioProjects = [
     year: 2024,
 
     images: [
-      // "/images/enspes_01.jpg",
-      // "/images/enspes_02.jpg",
-      // "/images/enspes_03.jpg",
+       "/images/Enspes_01.1.jpg",
+       "/images/Enspes_02.2.jpg",
+       "/images/Enspes_03.3.jpg",
+       "/images/Enspes_04.4.jpg",
+       "/images/Enspes_05.5.jpg",
+       "/images/Enspes_06.6.jpg",
+       "/images/Enspes_07.7.jpg",
+       "/images/Enspes_08.8.jpg",
     ],
   },
 
@@ -40,7 +45,14 @@ export const portfolioProjects = [
     year: 2024,
 
     images: [
-      // "/images/pargor_01.jpg",
+      "/images/Sam vas_01.jpg",
+      "/images/Sam vas_02.jpg",
+      "/images/Sam vas_03.jpg",
+      "/images/Sam vas_04.jpg",
+      "/images/Sam vas_05.jpg",
+      "/images/Sam vas_06.jpg",
+      "/images/Sam vas_07.jpg",
+      "/images/Sam vas_08.jpg",
       // "/images/pargor_02.jpg",
       // "/images/pargor_03.jpg",
     ],
