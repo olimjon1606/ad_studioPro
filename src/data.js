@@ -1,6 +1,53 @@
 export const portfolioProjects = [
+
   {
     id: 1,
+    projectName: "Enspes",
+    title: "Enspes Residence",
+    type: "exterior",
+
+    description:
+      "A contemporary residence defined by bold geometry, natural materials, and a seamless connection between architecture and landscape.",
+
+    detailedInfo:
+      "A Dialogue Between Architecture and Nature\n\nEnspes Residence is a contemporary private residence designed by Adil Architects, where bold architectural geometry meets natural materials and refined minimalism.\n\nThe design is defined by clean volumes, textured stone facades, expansive glazing, and warm wooden accents. Carefully considered proportions and architectural details create a distinctive yet timeless character.\n\nOpen terraces, panoramic views, and thoughtfully integrated landscaping establish a seamless connection between indoor and outdoor living.\n\nThe result is a sophisticated residential environment that balances architectural expression, privacy, comfort, and functionality.",
+
+    clientName: "Wien, Austria",
+    area: 393,
+    year: 2024,
+
+    images: [
+      // "/images/enspes_01.jpg",
+      // "/images/enspes_02.jpg",
+      // "/images/enspes_03.jpg",
+    ],
+  },
+
+  {
+    id: 2,
+    projectName: "PARGOR",
+    title: "PARGOR HOUSE MUSEUM",
+    type: "exterior",
+
+    description:
+      "Pargor House Museum is a private residence in Samarkand, where traditional Uzbek architecture meets contemporary living. The design reimagines an existing property through authentic craftsmanship, intricate detailing, and thoughtfully designed outdoor spaces.",
+
+    detailedInfo:
+      "Where Heritage Meets Contemporary Living\n\nPargor House Museum is a private residential design project inspired by the rich architectural traditions of Samarkand.\n\nDeveloped within an existing building, the design celebrates Uzbek craftsmanship through intricately carved wooden columns, traditional ornamental patterns, textured brickwork, and natural materials.\n\nA central courtyard with a decorative fountain creates a peaceful atmosphere, while the open-air rooftop terrace provides a comfortable space for relaxation and family gatherings.\n\nThe project brings together cultural heritage, authentic architectural details, and modern residential comfort, creating a timeless living environment rooted in tradition.",
+
+    clientName: "Samarkand, Uzbekistan",
+    area: 210,
+    year: 2024,
+
+    images: [
+      // "/images/pargor_01.jpg",
+      // "/images/pargor_02.jpg",
+      // "/images/pargor_03.jpg",
+    ],
+  },
+
+  {
+    id: 11,
     projectName: "Modern Villa",
     title: "Modern Villa Exterior Visualization",
     type: "exterior",
@@ -28,7 +75,7 @@ export const portfolioProjects = [
   },
 
   {
-    id: 2,
+    id: 22,
     projectName: "Luxury Apartment",
     title: "Luxury Apartment Interior Design",
     type: "interior",
