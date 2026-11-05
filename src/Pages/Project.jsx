@@ -337,7 +337,7 @@ export default function Project() {
                     >
                       {project.clientName && (
                         <span style={badgeStyle}>
-                          Client {project.clientName}
+                          {project.clientName}
                         </span>
                       )}
 
